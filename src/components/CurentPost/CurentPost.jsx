@@ -23,7 +23,7 @@ export const CurentPosts = () => {
         <button
           type="submit"
         >
-          lol
+          loading
         </button>
       </div>
     </div>

@@ -9,8 +9,7 @@ export const getPostComents = async(postId, setResult, url) => {
 
 export const getUserName = async(setResultt, value) => {
   const searchResult = await fetch(USERS_URL)
-    .then(response => response.json())
-    .then(response => response.filter(user => user.email === value));
+    .then(response => response.json());
 
   setResultt(searchResult);
 };
