@@ -1,15 +1,27 @@
-# Movies list - Fetch movies
-- Replace `<your_account>` with your Github username in the
- [DEMO LINK](https://MaksymStarodubtsev.github.io/News/)
-- Follow the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline)
+# Project News
 
-## Task
-Implement `FindMovie` component to load movies from [OMDb API](http://www.omdbapi.com/) (You need to register and get an API key).
+The application is created for users and suppliers of products.
+- [DEMO LINK](https://MaksymStarodubtsev.github.io/News/)
 
-> Don't use class components. Use React Hooks instead.
+## Description
 
-1. When user enters a movie title and clicks a search button, send a request to `https://www.omdbapi.com/?apikey=[yourkey]&t=[title]`.
-1. If film is not found show an error message below the input. Hide the error after changing a title.
-1. If a film has been found show the preview as a `MovieCard`.
-1. Add a movie to the list after submitting a form and clear the input.
-1. Don't add the same film to the list twice (compare by `imdbId`).
+The application is easy to use, with a clear user interface and rich functionality.
+Application takes data from a remote server, and displays available products
+
+## Local development
+
+### Dependencies
+* Node v12.16.3 and higher
+* NPM v6.14.4 and higher
+* ... (describe any prerequisites, libraries, OS version, etc., needed before installing program.)
+
+
+### Installing
+* Fork and clone this repository
+* Run `npm install` in your terminal
+* Run `npm start`
+
+## Troubleshooting
+
+Any advise for common problems or issues.
+For any contributing or problem solving you could find me [here](https://www.linkedin.com/in/maksym-starodubtsev-a70399205/)
