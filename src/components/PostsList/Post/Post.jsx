@@ -28,39 +28,39 @@ export const Post = ({ post }) => {
         <li className="list-group-item">userId - {userId}</li>
         <li className="list-group-item">id - {id}</li>
         <li className="list-group-item">A third item</li>
-        <li className="list-group Post__collapse">
-        <Button
-          onClick={() => {
-            getPostComents(id, setComments, COMMENTS_URL);
-            setOpen(!open);
-          }}
-          aria-controls="example-collapse-text"
-          aria-expanded={open}
-        >
-          Comments
-        </Button>
-        <div className="Post__collapse-text">
-          <Collapse in={open}>
-            <div id="example-collapse-text">
-              <ul className="list-group list-group-flush">
-                {Array.isArray(comments)
-                  ? (comments.map(comment => {
-                    const { body, email } = comment;
+        <li className="Post__collapse">
+          <Button
+            onClick={() => {
+              getPostComents(id, setComments, COMMENTS_URL);
+              setOpen(!open);
+            }}
+            aria-controls="example-collapse-text"
+            aria-expanded={open}
+          >
+            Comments
+          </Button>
+          <div className="Post__collapse-text">
+            <Collapse in={open}>
+              <div id="example-collapse-text">
+                <ul className="list-group list-group-flush">
+                  {Array.isArray(comments)
+                    ? (comments.map(comment => {
+                      const { body, email } = comment;
 
-                    return (
-                      <li className="list-group-item Post__collapse-text">
-                        {body}
-                        <Comment email={email} />
-                      </li>
-                    );
-                  }))
-                  : 'loading'
-                }
-              </ul>
-            </div>
-          </Collapse>
-        </div>
-      </li>
+                      return (
+                        <li className="list-group-item Post__collapse-text">
+                          {body}
+                          <Comment email={email} />
+                        </li>
+                      );
+                    }))
+                    : 'loading'
+                  }
+                </ul>
+              </div>
+            </Collapse>
+          </div>
+        </li>
       </ul>
 
     </div>

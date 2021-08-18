@@ -1,12 +1,12 @@
 # Project News
 
-The application is created for users and suppliers of products.
+The application is created for users and people who follow the news.
 - [DEMO LINK](https://MaksymStarodubtsev.github.io/News/)
 
 ## Description
 
 The application is easy to use, with a clear user interface and rich functionality.
-Application takes data from a remote server, and displays available products
+Application takes data from a remote server, and displays available Posts.
 
 ## Local development
 
